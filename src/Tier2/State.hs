@@ -17,8 +17,8 @@ plus = do
 minus :: Calculation
 minus = do
 	(Registers ax bx _ _) <- get
-	put (Registers ax bx False (ax+bx))
-	return (ax + bx)
+	put (Registers ax bx False (ax-bx))
+	return (ax - bx)
 
 productS :: Calculation
 productS = do
